@@ -1,0 +1,52 @@
+# Version control
+.git
+.gitignore
+.gitattributes
+.github
+
+# Environment files (injected at runtime)
+.env
+.env.*
+!.env.example
+
+# Dependencies (rebuilt inside Docker)
+node_modules
+vendor
+
+# Build artifacts
+public/build
+public/hot
+public/storage
+bootstrap/cache/*.php
+
+# Storage (mounted as volume)
+storage/logs/*
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+storage/app/public/*
+
+# Dev tools
+.agents
+.claude
+.cursor
+.gemini
+.mcp.json
+.prettierrc
+.prettierignore
+.editorconfig
+eslint.config.js
+tsconfig.json
+phpunit.xml
+
+# Docker compose & helper scripts (not needed inside the image)
+docker-compose*.yml
+docker-run.sh
+Dockerfile
+
+# Misc
+.DS_Store
+*.md
+npm-debug.log
+yarn-error.log
+image.png
